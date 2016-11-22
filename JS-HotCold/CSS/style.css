@@ -1,0 +1,52 @@
+@font-face{
+    font-family: GreatVibes;
+    src:url(../FONTS/GreatVibes-Regular.otf);
+}
+body{
+  background-image: url("../IMG/pattern1.jpg");
+}
+h1{
+  font-size: 60px;
+  font-family: GreatVibes;
+  color: white;
+  border-bottom: 1px solid white;
+}
+h2{
+  color: white;
+}
+#mid{
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 1000px;
+  height: 400px;
+  border: 2px solid white;
+}
+#user{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid white;
+}
+#pc{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#indic{
+  font-size: 50px;
+  text-align: center;
+}
+p{
+  color: white;
+}
+label{
+  color: white;
+}
+input{
+  margin-top: 40px;
+}
+#bouton{
+  position: relative;
+  left: 200px;
+}
