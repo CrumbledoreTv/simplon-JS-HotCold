@@ -6,13 +6,21 @@ body{
   background-image: url("../IMG/pattern1.jpg");
 }
 h1{
+  text-align: center;
   font-size: 60px;
   font-family: GreatVibes;
   color: white;
-  border-bottom: 1px solid white;
+}
+#red{
+  color: red;
+}
+#blue{
+  color: blue;
 }
 h2{
   color: white;
+  position: relative;
+  left: 130px;
 }
 #mid{
   position: relative;
@@ -21,6 +29,7 @@ h2{
   width: 1000px;
   height: 400px;
   border: 2px solid white;
+  background-color: rgba(171,179,178,0.8);
 }
 #user{
   position: relative;
@@ -36,12 +45,15 @@ h2{
 #indic{
   font-size: 50px;
   text-align: center;
+  position: relative;
 }
 p{
   color: white;
+  padding-left: 10px;
 }
 label{
   color: white;
+  padding-left: 10px;
 }
 input{
   margin-top: 40px;
@@ -49,4 +61,81 @@ input{
 #bouton{
   position: relative;
   left: 200px;
+}
+img{
+  position: relative;
+  width: 100px;;
+  height: 300px;
+  left: 200px;
+}
+#chaud{
+  position: absolute;
+  z-index: 1;
+  width: 14px;
+  height: 160px;
+  /*background-color: red;*/
+  left: 241px;
+  top: 195px;
+}
+#hot{
+  position: absolute;
+  z-index: 1;
+  width: 14px;
+  height: 65px;
+  /*background-color: red;*/
+  left: 241px;
+  top: 130px;
+}
+#chaudR{
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    width: 30px;
+    height: 40px;
+    /*background-color: red;*/
+    left: 233px;
+    top: 350px;
+}
+#froid{
+  position: absolute;
+  z-index: 1;
+  width: 14px;
+  height: 70px;
+  /*background-color: blue;*/
+  left: 241px;
+  top: 282px;
+}
+#froidR{
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  width: 30px;
+  height: 40px;
+  /*background-color: blue;*/
+  left: 233px;
+  top: 350px;
+}
+#work{
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.8);
+  width: 300px;
+  height: 200px;
+  top: 260px;
+  left: 800px;
+  transform-origin: top;
+  animation: axe 5s linear infinite alternate;
+}
+#win{
+  font-family: GreatVibes;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+@keyframes axe {
+  25%{transform: rotate(20deg);}
+  50%{transform: rotate(40deg);}
+  75%{transform: rotate(-20deg);}
+  100%{transform: rotate(-40deg);}
 }

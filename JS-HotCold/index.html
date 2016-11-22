@@ -9,7 +9,9 @@
   </head>
 
   <body>
-    <h1>Chaud ou Froid</h1>
+    <div id="work">
+    <p id="win"></p></div>
+    <h1><span id="red">Chaud</span> ou <span id="blue">Froid</span></h1>
     <div id="mid">
       <div id="user">
         <p>
@@ -20,15 +22,21 @@
 
           <label for="nombreUser">Entrer un nombre entre 0 et 100</label>
           <input type="number" id="nombreUser"/>
-          <input type="submit" value="Validez" onclick="game()"/><br><br>
+          <input type="submit" value="Valider" onclick="game()"/><br><br>
           <a href="index.html"><input type="submit" value="Restart" id="bouton"/></a>
       </div>
 
       <div id="pc">
         <h2>
-          Indication Chaud/froid
+          Indication (Chaud/froid):
         </h2>
         <p id="indic"></p>
+        <div id="chaud"></div>
+        <div id="hot"></div>
+        <div id="chaudR"></div>
+        <div id="froid"></div>
+        <div id="froidR"></div>
+        <img src="IMG/thermo.jpg">
       </div>
     </div>
         <script src="JS/javascript.js"></script>
