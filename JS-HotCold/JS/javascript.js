@@ -10,11 +10,8 @@ var essai= 0;
 function game(){
   var indication = document.getElementById('indic');
 
-  var chaud = document.getElementById("chaud");
-  var chaudR = document.getElementById("chaudR");
-
-  var froid = document.getElementById("froid");
-  var froidR = document.getElementById("froidR");
+  var temp = document.getElementById("temp");
+  var tempR = document.getElementById("tempR");
 
   var win = document.getElementById("work");
   var coup = document.getElementById("win");
@@ -31,53 +28,36 @@ if(essai == 5){
 }else if(essai<=9){
     if(nombre == nbPc){
       win.style.visibility = "visible";
+      temp.style.backgroundColor = "red";
+      temp.style.transition ="2s";
+      temp.style.height = "250px";
+      tempR.style.backgroundColor = "red";
+
       coup.innerHTML = "Vous avez gagné en "+essai+" coups";
       console.log("******* FIN SCRIPT *******");
     }else if(Math.abs(nbPc - nombre) <= 10){
-      chaud.style.backgroundColor = "red";
-      chaud.style.transition ="2s";
+      temp.style.backgroundColor = "red";
+      temp.style.transition ="2s";
+      temp.style.height = "230px";
 
-      hot.style.backgroundColor = "red";
-      hot.style.transition ="2s";
 
-      chaudR.style.backgroundColor = "red";
-      chaudR.style.transition ="2s";
+      tempR.style.backgroundColor = "red";
 
-      froid.style.backgroundColor = "red";
-      froid.style.transition ="2s";
-
-      froidR.style.backgroundColor = "red";
-      froidR.style.transition ="2s";
     }else if(Math.abs(nbPc - nombre) <= 20){
-      chaud.style.backgroundColor = "orange";
-      chaud.style.transition ="2s";
+      temp.style.backgroundColor = "orange";
+      temp.style.transition ="2s";
+      temp.style.height = "150px";
 
-      hot.style.backgroundColor = "white";
-      hot.style.transition ="2s";
+      tempR.style.backgroundColor = "orange";
+      tempR.style.transition ="2s";
 
-      chaudR.style.backgroundColor = "orange";
-      chaudR.style.transition ="2s";
-
-      froid.style.backgroundColor = "orange";
-      froid.style.transition ="2s";
-
-      froidR.style.backgroundColor = "orange";
-      froidR.style.transition ="2s";
     }else{
-      froid.style.backgroundColor = "blue";
-      froid.style.transition ="2s";
+      temp.style.backgroundColor = "blue";
+      temp.style.transition ="2s";
+      temp.style.height = "50px";
 
-      froidR.style.backgroundColor = "blue";
-      froidR.style.transition ="2s";
-
-      chaud.style.backgroundColor = "white";
-      chaud.style.transition ="2s";
-
-      hot.style.backgroundColor = "white";
-      hot.style.transition ="2s";
-
-      chaudR.style.backgroundColor = "blue";
-      chaudR.style.transition ="2s";
+      tempR.style.backgroundColor = "blue";
+      tempR.style.transition ="2s";
     }
   }else{
     alert("Vous avez perdu ! Le chiffre était : "+nbPc);

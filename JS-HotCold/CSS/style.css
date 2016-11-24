@@ -68,53 +68,25 @@ img{
   height: 300px;
   left: 200px;
 }
-#chaud{
+#temp{
   position: absolute;
+
   z-index: 1;
   width: 14px;
-  height: 160px;
-  /*background-color: red;*/
   left: 241px;
-  top: 195px;
+  bottom: 45px;
+  border-radius: 6px 6px 2px 2px;
 }
-#hot{
-  position: absolute;
-  z-index: 1;
-  width: 14px;
-  height: 65px;
-  /*background-color: red;*/
-  left: 241px;
-  top: 130px;
-}
-#chaudR{
+#tempR{
     position: absolute;
     z-index: 1;
     border-radius: 50%;
     width: 30px;
     height: 40px;
-    /*background-color: red;*/
     left: 233px;
     top: 350px;
 }
-#froid{
-  position: absolute;
-  z-index: 1;
-  width: 14px;
-  height: 70px;
-  /*background-color: blue;*/
-  left: 241px;
-  top: 282px;
-}
-#froidR{
-  position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-  width: 30px;
-  height: 40px;
-  /*background-color: blue;*/
-  left: 233px;
-  top: 350px;
-}
+
 #work{
   position: absolute;
   visibility: hidden;
@@ -133,6 +105,7 @@ img{
   text-align: center;
   color: white;
 }
+
 @keyframes axe {
   25%{transform: rotate(20deg);}
   50%{transform: rotate(40deg);}
